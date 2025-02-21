@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Основы форм</title>
+  </head>
+  <body>
+    <h1>Основы форм</h1>
+    <p>
+      Форма - это дверь между пользователем и сайтом, пользователь вводит
+      что-то, нажимает на кнопку, данные отправляются на сервер.
+    </p>
+    <form action="">
+      <input type="text" placeholder="Ваше имя:" />
+      <button>Отправить</button>
+    </form>
+
+    <p>
+        <strong>method</strong> - это способ как данные из форм отправляются на сервер<br>
+        <strong>GET</strong> - это как открытка. Все отправленные данные видны всем, кто посмотрит на адрес, например
+        <i>site.com?name=Иван?age=25</i> <br>
+        <strong>POST</strong> - это запечатанное письмо в конверте. 
+        Данные скрыты и отправляются тайно. 
+        Это лучший выбор для отправки данных, например пароля или номера телефона. <br>
+        В случае сомнений всегда лучше использовать <strong>POST</strong> method.
+    </p>
+
+    <form method="POST"></form>
+    <input type="text" placeholder="Ввод имени:">
+    <button>Отправить</button>
+
+    <p>
+        <strong>action</strong> - адрес, куда нужно доставить данные. 
+        Это может быть файл на сервере, который обрабатывает данные.
+    </p>
+
+    <form action="submit.php" method="post">
+        <input type="text" placeholder="Введите имя:">
+        <button>Отправить</button>
+    </form>
+  </body>
+</html>

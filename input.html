@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Поля ввода</title>
+  </head>
+  <body>
+    <h1>Поля ввода</h1>
+
+    <form action="">
+      <input type="email" placeholder="Введите ваш email" /> <br />
+      <input type="password" placeholder="Введите пароль" /> <br />
+
+      <input type="checkbox" id="fly" />
+      <label for="fly">Полёты</label>
+
+      <input type="checkbox" id="invisibility" />
+      <label for="invisibility">Недвижимость</label>
+
+      <br />
+
+      <input type="radio" id="batman" name="hero" value="batman" />
+      <label for="batman">Batman</label>
+
+      <input type="radio" id="superman" name="hero" value="superman" />
+      <label for="superman">Superman</label>
+
+      <br />
+
+      <input type="checkbox" id="agree">
+      <label for="agree">Согласен с условиями</label>
+    </form>
+
+    <p>
+      Все радиокнопки в группе должны иметь одинаковый атрибут name. Это
+      связывает их между собой. Атрибут id делает каждую кнопку уникальной,
+      чтобы её можно было связать с текстом через label.
+    </p>
+
+    <p>
+      Чтобы объединить радиокнопки в одну группу нужно использовать одинаковый
+      атрибут name.
+    </p>
+  </body>
+</html>
