@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Группировка элементов форм</title>
+</head>
+<body>
+    <h1>Группировка элементов форм</h1>
+    <p>
+        Использование &lt;fieldset&gt; и &lt;legent&gt;.
+    </p>
+
+    <form action="">
+        <fieldset>
+            <legend>Личные данные</legend>
+            <input type="text" placeholder="Иия:">
+            <input type="email" placeholder="Email:">
+        </fieldset>
+    </form>
+
+    <p>
+        &lt;fieldset&gt; нужен для группировка связанных элементов формы <br>
+        &lt;legend&gt; используется для создания заголовка группы <br>
+    </p>
+
+    <fieldset style="border: 2px solid green; color: blue;">
+        <legend>Личные данные</legend>
+        <label for="name">Имя</label>
+        <input type="text" id="name" placeholder="Имя:">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Email:">
+    </fieldset>
+</body>
+</html>

@@ -7,5 +7,47 @@
 </head>
 <body>
     <h1>Выпадающие списки</h1>
+    <p>
+        <strong>&lt;select&gt;</strong> - выпадающий список, позволяющий пользователю выбрать одно из предложенных вариантов. (контейнер) <br>
+        <strong>&lt;option&gt;</strong> - опции выпадающего списка. (вариант)<br>
+    </p>
+
+    <select name="" id="">
+        <option value="">Ванильное</option>
+        <option value="">Шоколадное</option>
+        <option value="">Клубничное</option>
+    </select>
+
+    <h3>Атрибут selected</h3>
+    <select name="" id="">
+        <option value="">Опция 1</option>
+        <option value="" selected>Опция 2</option>
+        <option value="">Опция 3</option>
+    </select>
+
+    <h3>атрибут disabled делает выбор недоступным</h3>
+    <select name="" id="">
+        <option value="">Классическая</option>
+        <option value="" disabled>Сыр с трюфелями (нет в наличии)</option>
+        <option value="">Пеперони</option>
+    </select>
+
+    <h3>Атрибут miltiple - выбор нескольких из выпадающего списка</h3>
+    <select name="" id="" multiple>
+        <option value="">Пеперрони</option>
+        <option value="">Четыре сыра</option>
+        <option value="">Гавайская</option>
+        <option value="">Маргарина</option>
+    </select>
+
+    <p>
+        выбор осуществляется с помощью зажатой клавиши command или ctrl.
+    </p>
+
+    <select name="" id="" style="background-color: lightpink; color: darkblue">
+        <option value="">Вариант 1</option>
+        <option value="">Вариант 2</option>
+        <option value="">Вариант 3</option>
+    </select>
 </body>
 </html>

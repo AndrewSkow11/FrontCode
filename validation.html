@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Валидация форм через HTML</title>
+</head>
+<body>
+    <h1>Валидация форм через HTML</h1>
+    <h2>Атрибут required (обязательность заполнения)</h2>
+    <form action="">
+        <input type="text" placeholder="Имя:" required>
+        <input type="email" placeholder="Email:" required>
+        <button type="submit">Отправить</button>
+    </form>
+    <h3>Атрибут minlength (для минимальной длины текста)</h3>
+    <form action="">
+        <input type="text" placeholder="Придумайте пароль" minlength="8" required>
+        <button type="submit">Создать аккаунт</button>
+    </form>
+</body>
+</html>

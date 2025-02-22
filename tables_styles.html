@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Добавление стилей</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+      table,
+      th,
+      td {
+        border: 2px solid white;
+      }
+      th,
+      td {
+        padding: 15px;
+        text-align: left;
+      }
+
+      table {
+        /* работает только с тегом table */
+        border-collapse: collapse; 
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Добавление стилей</h1>
+    <table>
+      <tr>
+        <td>Привет</td>
+        <td>Мир</td>
+      </tr>
+    </table>
+    <br />
+    <table>
+      <tr>
+        <th>Название</th>
+        <th>Цена</th>
+      </tr>
+      <tr>
+        <td>Яблоки</td>
+        <td>100</td>
+      </tr>
+    </table>
+
+    <p>
+        border-collapse: collapse объединяет границы ячеек
+        делая таблицу более цельной
+    </p>
+  </body>
+</html>
