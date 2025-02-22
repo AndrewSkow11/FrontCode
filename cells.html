@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Объединение ячеек</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+        }
+
+        td{
+            border: 1px solid white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        table{
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <h1>Объедениение ячеек</h1>
+    <h2>Атрибуты объединения ячеек</h2>
+    <ol>
+        <li>rowspan - объединение по вертикали</li>
+        <li>colspan - объединение по горизонтали</li>
+    </ol>
+
+    
+
+    <table>
+        <tr>
+            <th colspan="2">Заголовок на две колонки</th>
+        </tr>
+        <tr>
+            <td>Ячейка 1</td>
+            <td>Ячейка 2</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table style="border: 1px solid white; border-collapse: collapse;">
+        <tr>
+            <td rowspan="2">Фрукты</td>
+            <td>Яблоки</td>
+        </tr>
+
+        <tr>
+            <td>Апельсины</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table>
+        <tr>
+            <th colspan="2">Туринир по видеоиграм</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Участник</td>
+            <td>Раунд 1</td>
+        </tr>
+
+        <tr>
+            <td>Раунд 2</td>
+        </tr>
+    </table>
+</body>
+</html>
