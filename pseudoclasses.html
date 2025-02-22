@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Псевдоклассы</title>
+    <style>
+        /* :hover - меняет цвет при наведении*/
+        p:hover {
+            background-color: lightblue;
+            color: white;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover{
+            color: red;
+            text-decoration: underline; /* подчёркивание ссылки */
+        }
+
+        /* :focus */
+        input:focus {
+            border: 2px solid red;
+            outline: none; /* убирает контур вокруг поля */
+        }
+
+        /* :nth-child */
+        li:nth-child(even) {
+            background-color: lightgray;
+        }
+
+        li:nth-child(odd) {
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Псевдоклассы</h1>
+    <h2>Самые популярные псевдоклассы</h2>
+    <ol>
+        <li>:hover</li>
+        <li>:focus</li>
+        <li>:nth-child</li>
+    </ol>
+    <p>
+        <strong>Псевдоклассы</strong> - это специальные 
+        ключевые слова CSS, которые добавляются к селекторам
+        и позволяют стилизовать элементы в зависимости от их
+        состояния или положения.
+    </p>
+
+    <h2>Особенности псевдоклассов</h2>
+    <ol>
+        <li>Обозначаются с двоеточия</li>
+        <li>Используются для стилизации состояний, которых нет в обычном HTML</li>
+        <li>примеры:</li>
+        <ol>
+            <li>Наведение курсора на элемент</li>
+            <li>активация поля ввода</li>
+            <li>выделение чётных строк</li>
+        </ol>
+    </ol>
+    
+    <form action="">
+        <input type="text" placeholder="Введите текст" />
+        <input type="submit" value="Отправить" />  <!-- Псевдокласс :focus -->
+    </form>
+
+    <p>
+        <a href="#">Какая-то сслыка</a> в абзаце. 
+    </p>
+
+    <p>
+        even - чётные элементы 
+        odd - нечётные 
+    </p>
+</body>
+</html>
