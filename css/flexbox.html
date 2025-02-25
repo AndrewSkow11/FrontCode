@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container{
+            display: flex; /* включение флексбокса для дочерних элементов */
+            flex-direction: row; /* flex-direction: расположение в строку */
+            justify-content: space-between; /* выравнивание по горизонтали по центру */
+            /* align-items: center; выравнивание по вертикали по центру */
+            /* height: 200px; */
+            padding: 20px;
+            background-color: #f5f5f5;             
+        }
+
+        .item {
+            width: 50px;
+            height: 50px;
+            background-color: coral;
+            margin: 5px;
+        }
+        .card {
+            width: 150px;
+            height: 100px;
+            background-color: lightgreen;
+            text-align: center;
+            line-height: 100px;
+            border-radius: 8px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox</h1>
+    <div class="container">
+        <div class="card">Карточка 1</div>
+        <div class="card">Карточка 2</div>
+        <div class="card">Карточка 3</div>
+    </div>
+</body>
+</html>

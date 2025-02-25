@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добавление границ и теней</title>
+    <style>
+        .with_shadow{
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <h1>Добавление границ и теней</h1>
+    <p>
+        CSS позволяет добавлять границы и теней к элементам.
+    </p>
+    <div style="border: 5px solid black; padding: 20px; box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);">
+        Это элемент с добавленными границами и тенью.
+    </div>
+    <p style="border: 5px dashed red">
+        border: 5px dashed red
+    </p>
+    <p style="border: 5px dotted red">
+        border: 5px dotted red
+    </p>
+    <p style="border-top:3px solid green; border-right: 8px dashed blue; border-bottom: 7px dotted violet; border-left: 2px solid navy;">
+        border-top:3px solid green; <span style="color:grey; font-style: italic;">верхняя граница</span><br> 
+        border-right: 8px dashed blue; <span style="color:grey; font-style: italic;">правая граница</span><br>
+        border-bottom: 7px dotted violet; <span style="color:grey; font-style: italic;">нижняя граница</span><br>
+        border-left: 2px solid navy; <span style="color:grey; font-style: italic;">левая граница</span><br>
+    </p>
+    <h2>Параметры box-shadow</h2>
+    <p class="with_shadow">
+        .with_shadow{
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+            - тень сдвинута на 10 px вправо и вниз, 15px - мягкость и размытие краям тени
+            rgba(0, 0, 0, 0.5) - чёрный цвет с прозрачность 0.5 
+        }
+    </p>
+</body>
+</html>

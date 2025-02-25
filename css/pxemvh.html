@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Единицы измерения</title>
+    <style>
+        html {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Единицы измерения</h1>
+    <p>
+        px - фиксировання единица измерения
+    </p>
+    <h2>Относительные единицы измерения</h2>
+    <ol>
+        <li>em</li>
+        <li>%</li>
+        <li>vh</li>
+        <li>wv</li>
+    </ol>
+    <h2>%</h2>
+    <p>
+        Проценты в CSS умеют подстраиваться под размеры родительских 
+        элементов. 
+    </p>
+    <div style="width:50%; border:2px solid black">
+        Этот div имеет ширину 50% от родительского элемента.
+    </div>
+    <h2>rem, em</h2>
+    <p>
+        <strong>em</strong> зависит от размера шрифта родителя <br>
+        <strong>rem</strong> зависит от размера шрифта html-документа (корневого элемента)
+    </p>
+    <div style="font-size:20px;">
+        <p>Этот параграф имеет размер шрифта 20px, 
+            и его ширина зависит от размера шрифта родительского div-а
+        </p>
+        <p style="font-size: 2em;">
+            Параграф внутри div : 2em = 40px;
+        </p>
+        <p style="font-size: 2rem;">
+            Параграф внутри div : 2rem = 32px;
+        </p>
+    </div>
+    <h2>vh, vw</h2>
+    <p>
+        <strong>vh</strong> - viewport height - 1% от высоты окра браузера <br>
+        <strong>vw</strong> - viewport width - 1% от ширины браузера
+    </p>
+    <div style="height:50vh; width:50vw; border:2px solid black;" >
+        Этот div имеет высоту и ширину 50% от размера окна браузера.
+    </div>
+</body>
+</html>

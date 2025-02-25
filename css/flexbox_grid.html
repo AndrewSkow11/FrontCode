@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Комбинация Flexbox и Grid</title>
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px
+      }
+      .flex-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      button {
+        padding: 10px 20px;
+        background-color: #3498db;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Комбинация Flexbox и Grid</h1>
+    <div class="grid-container">
+      <div class="grid-item">
+        <div class="flex-container">
+            <p>Контент</p>
+            <button>Кнопка</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

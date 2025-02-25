@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блочная модель</title>
+    <style>
+        .card {
+            display: inline-block;
+            width: 150px;
+            height: 100px;
+            background-color: lightblue;
+            margin: 10px;
+            text-align: center;
+            line-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Блочная модель</h1>
+    <h1>Заголовок (block)</h1>
+    <p>Абзац текста также является блоковым элементов</p>
+    <span>Этот текст строчный элемент (inline)</span>
+    <button style="display: inline-block; width: 150px; height: 40px;">
+        Кнопка со свойством inline-block
+    </button>
+    <p>
+        Вот это <span style="color: red;">строчный элемент</span>, 
+        а остальной текст идёт прямо рядом с ним. 
+    </p>
+    <h2>примеры inline элементов</h2>
+    <ol>
+        <li>&lt;span&gt;</li>
+        <li>&lt;strong&gt;</li>
+        <li>&lt;em&gt;</li>
+        <li>&lt;img&gt;</li>
+        <li>&lt;a&gt;</li>
+        <li>&lt;strong&gt;</li>
+    </ol>
+    <h2>display: inline-block</h2>
+    <div>
+        <span style="display: inline-block; width: 100px; height: 50px; background-color: lightblue; text-align: center;">
+            inline-block span elemnet
+        </span>
+        <span style="display: inline-block; width: 150px; height: 50px; background-color: lightcoral; text-align: center;">
+            inline-block span elemnet 2
+        </span>
+
+        <span style="display: block; background-color: lightcoral; padding: 10px; margin: 10px;">
+            Текст span как блоковый
+        </span>
+    </div>
+    <h2>Карточки товаров</h2>
+    <div class="card">Карточка 1</div>
+    <div class="card">Карточка 2</div>
+    <div class="card">Карточка 3</div>
+</body>
+</html>

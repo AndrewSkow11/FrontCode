@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Стилизация кнопок</title>
+    <style>
+      .first-button {
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        /* курсор указатель */
+        cursor:  pointer; 
+      }
+      .blue-button {
+        background-color: #008CBA;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        /* курсор указатель */
+        cursor: pointer;
+      }
+      /* при наведении на кнопку */
+      .blue-button:hover{
+        background-color: #005f73;
+      }
+      .button-with-shadow{
+        background-color: #4caf50;
+        color:white;
+        padding: 10px 20px;
+        border-radius: 8px;
+        border:none;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+        cursor: crosshair;
+      }
+      .button-with-shadow:hover{
+        background-color: #4cafff;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Стилизация кнопок</h1>
+    <button class="first-button">Нажми меня</button>
+    <button class="blue-button">Наведи на меня</button>
+    <button class="button-with-shadow">Кнопка с тенью</button>
+  </body>
+</html>
