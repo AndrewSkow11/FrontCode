@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Операторы</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <h1>Операторы</h1>
+    <h2>Три вида операторов</h2>
+    <ol>
+        <li>Арифметические</li>
+        <li>Логические</li>
+        <li>Сравнения</li>
+    </ol>
+    <h2>Арифметические операторы</h2>
+    <ol>
+        <li>+</li>
+        <li>-</li>
+        <li>*</li>
+        <li>/</li>
+        <li>% - остаток от деления</li>
+        <li>++ (префиксный)</li>
+        <li>-- (префиксный)</li>
+        <li>++ (постфиксный)</li>
+        <li>-- (постфиксный)</li>
+    </ol>
+    <script>
+        let a = 10;
+        let b = 5;
+        console.log("Сумма: ", a + b); // 15
+        console.log("Разность: ", a - b); // 5
+        console.log("Произведение: ", a * b); // 50
+        console.log("Частное: ", a / b); // 2
+        console.log("Остаток от деления: ", a % b); // 0
+    </script>
+    <h2>Опреторы сравнения</h2>
+    <ol>
+        <li>&lt; и &gt;</li>
+        <li>&lt;= и &gt;=</li>
+        <li>== и!= (равенство)</li>
+        <li>=== и!== (строгое равенство)</li>
+    </ol>
+    <p>
+        Сравнения в JavaScript работают сравнивая значения, а не ссылки на объекты.
+        Если вы хотите сравнить ссылки на объекты, используйте оператор "====" или "!==="
+        (строгое равенство).
+    </p>
+    <script>
+        console.log(10 > 5);
+        console.log(10 < 5);
+        console.log(10 >= 10);
+        console.log(10 <= 10);
+    </script>
+    <p>
+        == нестрогое равенство не учитывает тип данных. <br>
+        === строгое равенство учитывает и тип данных.
+    </p>
+    <script>
+        console.log(10 == "10"); // true
+        console.log(10 === "10"); // false
+    </script>
+    <h2>Логические операторы</h2>
+    <ol>
+        <li>AND (&&) - оба оператора должны быть истины чтобы получить истину</li>
+        <li>OR (||) для истины должен быть хотя бы один трушный операнд</li>
+        <li>NOT (!) </li>
+        <li>XOR (^)</li>
+        <li>ИНВЕРСИЯ (~)</li>
+    </ol>
+    <script>
+        let isStudent = true; 
+        let hasDiscount = false;
+        console.log("Имеет скидку: ", isStudent && hasDiscount); // false
+        console.log("Имеет скидку: ", isStudent || hasDiscount); // true
+        console.log("Имеет скидку: ",!isStudent); // false
+    </script>
+</body>
+</html>

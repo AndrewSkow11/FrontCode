@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Типы данных</title>
+</head>
+<body>
+    <h1>Типы данных</h1>
+    <h2>Основыне типы данных</h2>
+    <ol>
+        <li>Строки string</li>
+        <li>Числа number</li>
+        <li>Логические значения boolean</li>
+        <li>Undefined - переменная, которой не присвоено значение</li>
+        <li>Null - специальное значение, означающее ничего</li>
+    </ol>
+    <h2>Строки</h2>
+    <p>
+        Строки представляют собой последовательность символов, заключенных в двойные или одинарные кавычки.
+        Например: "Hello, World!" <br>
+        Строки можно объединять при помощи символа + 
+    </p>
+    <script>
+        let name = "John";
+        let age = 30;
+        let message = "Hello, my name is " + name + ". I'm " + age + " years old.";
+        console.log(message);
+    </script>
+    <h2>Числа (number)</h2>
+    <p>
+        Числа представляют собой целые и дробные числа.
+        Например: 123, 45.67 <br>
+        Можно использовать разные разделители десятичной части, например: 123.456, 123,456.789
+    </p>
+    <script>
+        let my_age = 25;
+        let pi = 3.14159; 
+        console.log("Мой возраст: " + my_age);
+        console.log("Значение PI: " + pi);
+        let price = 100;
+        let discount = 20;
+        let finalPrice = price - discount;
+        console.log("Цена с учетом скидки: " + finalPrice);
+    </script>
+    <h2>Булевы переменные</h2>
+    <script>
+        let isStudent = true;
+        let hasDiscount = false;
+        console.log("Студент: " + isStudent);
+        console.log("Имеет скидку: " + hasDiscount);
+    </script>
+    <h2>Undefined</h2>
+    <p>
+        Undefined - это специальное значение, которое означает, что переменная не присвоено никакого значения.
+        Например: let myVariable; <br>
+        В этом случае myVariable будет равно undefined
+    </p>
+    <script>
+        let x;
+        console.log(x); // undefined
+    </script>
+    <h2>Null</h2>
+    <p>
+        Null - это специальное значение, которое означает, что переменная не имеет никакого значения.
+        Например: let myVariable = null; <br>
+        В этом случае myVariable будет равно null
+    </p>
+    <script>
+        let y = null;
+        console.log(y); // null
+    </script>
+</body>
+</html>
