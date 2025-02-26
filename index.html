@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      #html {
+        display: none;
+      }
+      #css {
+        display: none;
+      }
+      #js {
+        display: block;
+        /* display: none; */
+      }
+
       body {
         font-family: sans-serif;
       }
@@ -14,6 +25,11 @@
         padding: 20px;
         border: 1px solid #ccc;
         border-radius: 5px;
+      }
+
+      .module:hover {
+        background-color: lightgreen;
+        transition: 1s linear;
       }
 
       h1 {
@@ -26,56 +42,131 @@
       }
 
       a:hover {
-        background-color: lightblue;
+        background-color: white;
         font-size: 120%;
+        transition: 1s ease-in-out;
       }
     </style>
   </head>
   <body>
     <h1>Frontend Developer</h1>
 
-    <div class="module">
-      <h2>Основы HTML</h2>
-      <ol>
-        <li><a href="html/semantic_tags.html">Cемантические теги</a></li>
-        <li><a href="html/portfolio.html">Портфолио</a></li>
-      </ol>
+    <h2>HTML</h2>
+    <button onclick="document.getElementById('html').style.display='block';">
+      Показать разделы HTML
+    </button>
+    <button onclick="document.getElementById('html').style.display='none';">
+      Скрыть разделы HTML
+    </button>
+    <br />
+    <div id="html">
+      <div class="module">
+        <h2>Основы HTML</h2>
+        <ol>
+          <li><a href="html/semantic_tags.html">Cемантические теги</a></li>
+          <li><a href="html/portfolio.html">Портфолио</a></li>
+        </ol>
+      </div>
+
+      <div class="module">
+        <h2>Формы в HTML</h2>
+        <ol>
+          <li><a href="html/basic_forms.html">Основы форм</a></li>
+          <li><a href="html/input.html">Поля ввода</a></li>
+          <li><a href="html/textarea.html">Элемент textarea</a></li>
+          <li><a href="html/buttons.html">Кнопки</a></li>
+          <li><a href="html/dropdownlists.html">Выпадающие списки</a></li>
+          <li>
+            <a href="html/formelements.html">Группировка элементов форм</a>
+          </li>
+          <li><a href="html/validation.html">Валидация форм через HTML</a></li>
+        </ol>
+      </div>
+
+      <div class="module">
+        <h2>Таблицы</h2>
+        <ol>
+          <li>
+            <a href="html/basic_tables.html">Основы работы с таблицами</a>
+          </li>
+          <li><a href="html/table_headers.html">Заголовки таблиц</a></li>
+          <li><a href="html/tables_styles.html">Добавление стилей</a></li>
+          <li><a href="html/cells.html">Объединение ячеек</a></li>
+          <li><a href="html/simple_table.html">Упрощение таблиц</a></li>
+        </ol>
+      </div>
     </div>
 
-    <div class="module">
-      <h2>Формы в HTML</h2>
-      <ol>
-        <li><a href="html/basic_forms.html">Основы форм</a></li>
-        <li><a href="html/input.html">Поля ввода</a></li>
-        <li><a href="html/textarea.html">Элемент textarea</a></li>
-        <li><a href="html/buttons.html">Кнопки</a></li>
-        <li><a href="html/dropdownlists.html">Выпадающие списки</a></li>
-        <li><a href="html/formelements.html">Группировка элементов форм</a></li>
-        <li><a href="html/validation.html">Валидация форм через HTML</a></li>
-      </ol>
+    <h2>CSS</h2>
+    <button onclick="document.getElementById('css').style.display='block';">
+      Показать разделы CSS
+    </button>
+    <button onclick="document.getElementById('css').style.display='none';">
+      Скрыть разделы CSS
+    </button>
+    <br />
+
+    <div id="css">
+      <div class="module">
+        <h2>Основы стилизации</h2>
+        <ol>
+          <li><a href="html/basic_style.html">Основы стилизации</a></li>
+          <li><a href="html/more_selectors.html">Углублённые селекторы</a></li>
+          <li><a href="html/pseudoclasses.html">Псевдоклассы</a></li>
+          <li><a href="html/pseudo_elements.html">Пседвоэлементы</a></li>
+          <li><a href="css/cascading.html">Каскадность и наследование</a></li>
+          <li><a href="css/fonts.html">Работа со шрифтами</a></li>
+          <li><a href="css/pxemvh.html">Единицы измерения</a></li>
+          <li>
+            <a href="css/boxsing.html">Box-sizing и управление размерами</a>
+          </li>
+          <li>
+            <a href="css/shadow_border.html">Добавление границ и теней</a>
+          </li>
+          <li><a href="css/margin_padding.html">Управление отступами</a></li>
+          <li><a href="css/button_style.html">Стилизация кнопок</a></li>
+        </ol>
+      </div>
+
+      <div class="module">
+        <h2>Макеты и адативность</h2>
+        <ol>
+          <li><a href="css/block_model.html">Блочная модель</a></li>
+          <li><a href="css/flexbox.html">Flexbox</a></li>
+          <li><a href="css/flexbox_more.html">Flexbox: углубление</a></li>
+          <li><a href="css/css_grid.html">CSS Grid</a></li>
+          <li><a href="css/flexbox_grid.html">Комбинация Flexbox и Grid</a></li>
+          <li><a href="css/adaptive_design.html">Адаптивный дизайн</a></li>
+          <li>
+            <a href="css/absolute_and_fixed_positioning.html"
+              >Абсолютное и фиксированное позиционирование</a
+            >
+          </li>
+          <li><a href="css/overflow.html">Работа с overflow</a></li>
+          <li><a href="css/animation.html">Анимации</a></li>
+        </ol>
+      </div>
     </div>
 
-    <div class="module">
-      <h2>Таблицы</h2>
-      <ol>
-        <li><a href="html/basic_tables.html">Основы работы с таблицами</a></li>
-        <li><a href="html/table_headers.html">Заголовки таблиц</a></li>
-        <li><a href="html/tables_styles.html">Добавление стилей</a></li>
-        <li><a href="html/cells.html">Объединение ячеек</a></li>
-        <li><a href="html/simple_table.html">Упрощение таблиц</a></li>
-      </ol>
-    </div>
+    <h2>JavaScript</h2>
+    <button onclick="document.getElementById('js').style.display='block';">
+      Показать разделы JS
+    </button>
+    <button onclick="document.getElementById('js').style.display='none';">
+      Скрыть разделы JS
+    </button>
+    <br />
 
-    <div class="module">
-      <h2>Основы стилизации</h2>
-      <ol>
-        <li><a href="html/basic_style.html">Основы стилизации</a></li>
-        <li><a href="html/more_selectors.html">Углублённые селекторы</a></li>
-        <li><a href="html/pseudoclasses.html">Псевдоклассы</a></li>
-        <li><a href="html/pseudo_elements.html">Пседвоэлементы</a></li>
-        <li><a href="css/cascading.html">Каскадность и наследование</a></li>
-        <li><a href="css/fonts.html">Работа со шрифтами</a></li>
-      </ol>
+    <div id="js">
+      <div class="module">
+        <h2>Основы JavaScript</h2>
+        <ol>
+          <li><a href="js/01_intro_to_js.html">Введение в JavaScript</a></li>
+          <li><a href="js/02_let_const.html">let, const</a></li>
+          <li><a href="js/03_data_types.html">Типы данных</a></li>
+          <li><a href="js/04_operators.html">Операторы</a></li>
+        </ol>
+      </div>
     </div>
   </body>
 </html>

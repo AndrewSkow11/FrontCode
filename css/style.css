@@ -1,0 +1,28 @@
+body {
+    font-family: sans-serif;
+}
+
+p{
+    background-color: gainsboro;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+ol,ul {
+    background-color: lavenderblush;
+    padding: 20px;
+    border-radius: 10px;
+    list-style-position: inside;
+}
+
+li {
+    padding: 5px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    background-color: lightgray;
+    padding: 20px;
+    border-radius: 10px;
+}
+
