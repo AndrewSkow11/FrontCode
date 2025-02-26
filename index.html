@@ -5,15 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      
       #html {
         display: none;
+        
       }
       #css {
         display: none;
       }
       #js {
-        display: block;
+        display: grid;
         /* display: none; */
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
       }
 
       body {
@@ -46,6 +50,7 @@
         font-size: 120%;
         transition: 1s ease-in-out;
       }
+
     </style>
   </head>
   <body>
@@ -59,7 +64,7 @@
       Скрыть разделы HTML
     </button>
     <br />
-    <div id="html">
+    <div id="html" class="html">
       <div class="module">
         <h2>Основы HTML</h2>
         <ol>
