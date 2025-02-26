@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Функции</title>
+</head>
+<body>
+    <h1>Функции</h1>
+    
+
+    <h2>Функция greet()</h2>
+    <p id="greet"></p>
+    <h2>Функция introduce()</h2>
+    <p id="name_age"></p>
+    <script>
+        function greet(name) {
+            greeting = "Hello, " + name + "!";
+            document.getElementById('greet').innerHTML = greeting;
+        }
+
+        greet('Alice');
+
+        function introduce(name, age){
+            introduction = "My name is " + name + ". I'm " + age + " years old.";
+            document.getElementById('name_age').innerHTML = introduction;
+        }
+
+        introduce('Bob', 30);
+
+        function multiply(a, b) {
+            return a * b;
+        }
+        console.log(multiply(5, 10)); // 50
+    </script>
+</body>
+</html>

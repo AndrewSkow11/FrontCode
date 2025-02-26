@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выбор элементов</title>
+</head>
+<body>
+    <h1 id="main-title">Выбор элементов</h1>
+    <h2>2 важных метода:</h2>
+    <ol>
+        <li>getElementById</li>
+        <li>querySelector</li>
+    </ol>
+    <p class="text">Привет DOM!</p>
+    <script>
+        const title = document.getElementById('main-title');
+        title.style.color ='red';
+        title.textContent += " в JS";
+        console.log(title);
+
+        const text = document.querySelector('.text');
+        text.textContent = 'Привет, textContent';
+    </script>
+    <p>
+        Метод querySelector позволяет выбрать элемент с помощью CSS-селектора.
+    </p>
+</body>
+</html>
